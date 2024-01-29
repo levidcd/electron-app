@@ -49,7 +49,7 @@ jobs:
       # step5: cleanup artifacts in dist_electron
       - name: cleanup artifacts
         run: |
-          npx rimraf "dist/!(*.exe|*.dmg)"
+          npm run clean
 
       # step6: upload artifacts
       - name: upload artifacts
