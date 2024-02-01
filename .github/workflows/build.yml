@@ -33,7 +33,7 @@ jobs:
         # step3: npm install
       - name: npm install
         run: |
-          npm install
+          npm install -f
 
       # step4: build app for mac/win
       - name: build windows app
