@@ -4,10 +4,11 @@
     <meta charset="UTF-8" />
     <title>Electron</title>
     <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
-    <meta
-      http-equiv="Content-Security-Policy"
-      content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:"
-    />
+    <!-- This script tag should be placed after pixi.min.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@pixi/unsafe-eval@7.x/dist/unsafe-eval.min.js"></script>
+    <script src="/library/live2d.min.js"></script>
+    <script src="/library/live2dcubismcore.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/pixi-live2d-display/dist/index.min.js"></script> -->
   </head>
 
   <body>

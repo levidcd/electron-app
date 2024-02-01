@@ -24,7 +24,12 @@
   "dependencies": {
     "@electron-toolkit/preload": "^3.0.0",
     "@electron-toolkit/utils": "^3.0.0",
-    "electron-updater": "^6.1.7"
+    "@pixi/unsafe-eval": "^6.5.2",
+    "electron-toolkit": "^1.0.24",
+    "electron-updater": "^6.1.7",
+    "pixi-live2d": "^1.2.1",
+    "pixi-live2d-display": "^0.4.0",
+    "pixi.js": "^6.5.2"
   },
   "devDependencies": {
     "@electron-toolkit/eslint-config-prettier": "^2.0.0",
@@ -35,7 +40,7 @@
     "@types/react-dom": "^18.2.18",
     "@vitejs/plugin-react": "^4.2.1",
     "cross-env": "^7.0.3",
-    "electron": "^28.2.0",
+    "electron": "^28.2.1",
     "electron-builder": "^24.9.1",
     "electron-vite": "^2.0.0",
     "eslint": "^8.56.0",

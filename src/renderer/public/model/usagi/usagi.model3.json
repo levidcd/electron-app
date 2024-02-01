@@ -1,0 +1,34 @@
+{
+	"Version": 3,
+	"FileReferences": {
+		"Moc": "usagi.moc3",
+		"Textures": [
+			"usagi.2048/texture_00.png"
+		],
+		"Physics": "usagi.physics3.json",
+		"DisplayInfo": "usagi.cdi3.json",
+		"Expressions": [
+			{
+				"Name": "expression1",
+				"File": "ha.exp3.json"
+			},
+			{
+				"Name": "expression2",
+				"File": "dance.exp3.json"
+			}
+		]
+	},
+	"Groups": [
+		{
+			"Target": "Parameter",
+			"Name": "LipSync",
+			"Ids": []
+		},
+		{
+			"Target": "Parameter",
+			"Name": "EyeBlink",
+			"Ids": []
+		}
+	],
+	"HitAreas": []
+}
