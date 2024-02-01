@@ -15,16 +15,15 @@ Application.registerPlugin(TickerPlugin);
 // register InteractionManager to make Live2D models interactive
 Renderer.registerPlugin('interaction', InteractionManager);
 
-const cubism2Model =
-  "https://cdn.jsdelivr.net/gh/guansss/pixi-live2d-display/test/assets/shizuku/shizuku.model.json";
-const cubism4Model =
-  "https://cdn.jsdelivr.net/gh/guansss/pixi-live2d-display/test/assets/haru/haru_greeter_t03.model3.json";
-const wsq =
-  '/model/WSQ/WSQ.model3.json'
+const gitUrl = "https://cdn.jsdelivr.net/gh/levidcd/live2d-model"
+
 
 const models = {
-  usagi: '/model/usagi/usagi.model3.json',
-  chiikawa: '/model/chiikawa/chiikawa.model3.json'
+  usagi: '/usagi/usagi.model3.json',
+  chiikawa: '/chiikawa/chiikawa.model3.json',
+  cubism2Model: '/shizuku/shizuku.model.json',
+  haru: '/haru/haru_greeter_t03.model3.json',
+  wsq: '/wsq/WSQ.model3.json'
 }
 
 
@@ -40,12 +39,13 @@ export async function init(dom) {
     antialias: true,
     backgroundAlpha: 0,
     // 高度
-    height: '400',
+    height: 600,
     // 宽度
-    width: '300'
+    width: 450
   });
 
-  const model = await Live2DModel.from(models.usagi);
+  const url = gitUrl + models.usagi
+  const model = await Live2DModel.from(url);
 
   // // 鼠标跟踪方法
   // model.trackedPointers = [{ id: 1, type: 'pointerdown', flags: true }, { id: 2, type: 'mousemove', flags: true }]
