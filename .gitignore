@@ -3,3 +3,6 @@ dist
 out
 .DS_Store
 *.log*
+yarn.lock
+.gitignore
+package-lock.json

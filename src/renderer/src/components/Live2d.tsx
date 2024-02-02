@@ -28,7 +28,7 @@ const models = {
 
 
 
-export async function init(dom) {
+export async function init() {
 
   const app = new Application({
     view: document.getElementById('canvas'),
