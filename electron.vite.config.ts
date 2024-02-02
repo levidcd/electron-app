@@ -12,7 +12,7 @@ export default defineConfig({
   renderer: {
     resolve: {
       alias: {
-        '@renderer': resolve('src/renderer/src'),
+        '@renderer': resolve('src/renderer/src')
         // '@pixi/core': join(__dirname, 'node_modules/@pixi/core'),
         // 'pixi.js': join(__dirname, 'node_modules/pixi.js')
       }
